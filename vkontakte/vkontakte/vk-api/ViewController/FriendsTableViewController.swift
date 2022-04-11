@@ -20,7 +20,7 @@ class FriendsTableViewController: UITableViewController, UISearchBarDelegate {
        subscribeToNotificationRealm()
         
        GetFriends().loadData()
-        
+  
         searchBar.delegate = self
     }
     
@@ -191,10 +191,6 @@ class FriendsTableViewController: UITableViewController, UISearchBarDelegate {
         tableView.reloadData()
         searchBar.resignFirstResponder()
     }
-    
-    
-    // MARK: - Segue
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPhoto"{
