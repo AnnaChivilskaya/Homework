@@ -92,18 +92,18 @@ struct NewsResponse: Decodable {
 //    let configuration URLSeesionConfiguration.default
 //    let session = URLSession(configuration: configuration)
 //
-//    var url = URLComponents()
-//    url.scheme = "https"
-//    url.host = "api.vk.com"
-//    url.path = "/method/newsfeed.get"
-//    url.queryItems = [
+//    var urlConstructor = URLComponents()
+//    urlConstructor.scheme = "https"
+//    urlConstructor.host = "api.vk.com"
+//    urlConstructor.path = "/method/newsfeed.get"
+//    urlConstructor.queryItems = [
 //        URLQueryItem(name: "owner_id", value: String(Session.instante.userId)),
 //        URLQueryItem(name: "access_token", value: Session.instante.token),
 //    URLQueryItem(name: "filters", value: "post"),
 //        URLQueryItem(name: "count", value: "2"),
-//    URLQueryItem(name: "v", value: "5.111")]
+//    URLQueryItem(name: "v", value: "5.131")]
 //
-//        let task = session.dataTask(with: url.url!) { (data, response, error)
+//        let task = session.dataTask(with: urlConstructor.url!) { (data, response, error)
 //        print(url.url!)
 //
 //        guard let data = data else { return }

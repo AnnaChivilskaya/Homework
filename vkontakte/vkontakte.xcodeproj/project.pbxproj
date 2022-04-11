@@ -24,6 +24,7 @@
 		A116F0F727FDE30100F61E69 /* CloudAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A116F0F627FDE30100F61E69 /* CloudAnimationView.swift */; };
 		A116F0FA27FE0DC600F61E69 /* Avatars.swift in Sources */ = {isa = PBXBuildFile; fileRef = A116F0F927FE0DC600F61E69 /* Avatars.swift */; };
 		A116F0FC27FEBC7800F61E69 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A116F0FB27FEBC7800F61E69 /* NewsTableViewCell.swift */; };
+		A11D3C73280417F00038AB4F /* GroupsOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D3C72280417F00038AB4F /* GroupsOperations.swift */; };
 		A148B19A27F45C26002B63AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148B19927F45C26002B63AA /* LoginViewController.swift */; };
 		A154166827AAFABB001BD2AB /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A154166727AAFABB001BD2AB /* SwiftyJSON */; };
 		A15DAC1527AC3A4600F4B914 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = A15DAC1427AC3A4600F4B914 /* SwiftKeychainWrapper */; };
@@ -72,6 +73,7 @@
 		A116F0F627FDE30100F61E69 /* CloudAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudAnimationView.swift; sourceTree = "<group>"; };
 		A116F0F927FE0DC600F61E69 /* Avatars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatars.swift; sourceTree = "<group>"; };
 		A116F0FB27FEBC7800F61E69 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		A11D3C72280417F00038AB4F /* GroupsOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsOperations.swift; sourceTree = "<group>"; };
 		A148B19927F45C26002B63AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A15DAC3A27AC402C00F4B914 /* vk.com.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vk.com.xcdatamodel; sourceTree = "<group>"; };
 		A15DAC4A27AFDFC300F4B914 /* FriendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendService.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		A169BA4E27F4143300B85028 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A11D3C72280417F00038AB4F /* GroupsOperations.swift */,
 				A169BA2027F353FA00B85028 /* NewsViewController.swift */,
 				A148B19927F45C26002B63AA /* LoginViewController.swift */,
 				A1784EA027A827A500DCEA7E /* AuthVKViewController.swift */,
@@ -346,6 +349,7 @@
 				A18EE48427F43A2F0020E63E /* topnews.swift in Sources */,
 				A10B92FA27FD6F7B00B0D673 /* Realms.swift in Sources */,
 				A116F0FA27FE0DC600F61E69 /* Avatars.swift in Sources */,
+				A11D3C73280417F00038AB4F /* GroupsOperations.swift in Sources */,
 				A1784EAD27A86E7A00DCEA7E /* GroupsTableViewController.swift in Sources */,
 				A166BC8827A7EF4700465CDA /* AppDelegate.swift in Sources */,
 				A166BC8A27A7EF4700465CDA /* SceneDelegate.swift in Sources */,
