@@ -23,20 +23,20 @@ class AuthVKViewController: UIViewController {
     
     func loadAuthVK() {
       
-        var url = URLComponents()
-        url.scheme = "https"
-        url.host = "oauth.vk.com"
-        url.path = "/authorize"
-        url.queryItems = [
+        var urlConstructor = URLComponents()
+        urlConstructor.scheme = "https"
+        urlConstructor.host = "oauth.vk.com"
+        urlConstructor.path = "/authorize"
+        urlConstructor.queryItems = [
             URLQueryItem(name: "client_id", value: "8120234"),
             URLQueryItem(name: "display", value: "mobile"),
             URLQueryItem(name: "redirect_uri", value: "https://oauth.vk.com/blank.html"),
             URLQueryItem(name: "scope", value: "friends,photos,groups,wall"),
             URLQueryItem(name: "response_type", value: "token"),
-            URLQueryItem(name: "v", value: "5.120")
+            URLQueryItem(name: "v", value: "5.131")
         ]
         
-        guard let url = url.url  else { return }
+        guard let url = urlConstructor.url  else { return }
         let request = URLRequest(url: url)
         
         webView.load(request)
@@ -65,8 +65,7 @@ extension AuthVKViewController: WKNavigationDelegate {
             decisionHandler(.allow)
             return
         }
-        
-        
+  
         let params = fragment
             .components(separatedBy: "&")
             .map { $0.components(separatedBy: "=") }

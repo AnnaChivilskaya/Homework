@@ -19,8 +19,9 @@ class FriendsTableViewController: UITableViewController, UISearchBarDelegate {
         
        subscribeToNotificationRealm()
         
-       GetFriends().loadData()
+//       GetFriends().loadData()
         
+        FriendsPromiseKit().getData()
         searchBar.delegate = self
     }
     
@@ -40,9 +41,6 @@ class FriendsTableViewController: UITableViewController, UISearchBarDelegate {
     var namesListFixed: [String] = []
     var namesListModifed: [String] = []
     var letersOfNames: [String] = []
-    
-    
-    // MARK: - TableView
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return letersOfNames.count
@@ -191,10 +189,6 @@ class FriendsTableViewController: UITableViewController, UISearchBarDelegate {
         tableView.reloadData()
         searchBar.resignFirstResponder()
     }
-    
-    
-    // MARK: - Segue
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPhoto"{

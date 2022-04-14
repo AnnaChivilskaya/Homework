@@ -10,9 +10,11 @@ import UIKit
 import Foundation
 
 struct PostNews {
-    var name: String
-    var avatar: UIImage
-    var date: String
-    var NewsText: String
+    var name: String?
+    var avatar: UIImage?
+    var date: String?
+    var NewsText: String?
     var textImage: UIImage?
+    
+    
 }
