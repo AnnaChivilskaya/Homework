@@ -15,8 +15,10 @@ class GroupsTableViewController: UITableViewController {
         super.viewDidLoad()
                 
         subscribeToNotificationRealm()
+        
+        GroupsOperations().getData()
 
-        GetGroups().loadData()
+//        GetGroups().loadData()
     }
     
     var realm: Realm = {
