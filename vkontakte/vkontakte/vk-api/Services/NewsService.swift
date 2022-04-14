@@ -84,60 +84,51 @@ struct NewsResponse: Decodable {
                     }
     }
 }
-//
+
 //    class GetNews{
 //
-//    func loadData()
+//        func loadData()  {
 //
-//    let configuration URLSeesionConfiguration.default
-//    let session = URLSession(configuration: configuration)
+//            let configuration = URLSessionConfiguration.default
+//            let session =  URLSession(configuration: configuration)
 //
-//    var url = URLComponents()
-//    url.scheme = "https"
-//    url.host = "api.vk.com"
-//    url.path = "/method/newsfeed.get"
-//    url.queryItems = [
-//        URLQueryItem(name: "owner_id", value: String(Session.instante.userId)),
-//        URLQueryItem(name: "access_token", value: Session.instante.token),
-//    URLQueryItem(name: "filters", value: "post"),
+//    var urlConstructor = URLComponents()
+//    urlConstructor.scheme = "https"
+//    urlConstructor.host = "api.vk.com"
+//    urlConstructor.path = "/method/newsfeed.get"
+//    urlConstructor.queryItems = [
+//        URLQueryItem(name: "owner_id", value: String(Session.instance.userId)),
+//        URLQueryItem(name: "access_token", value: Session.instance.token),
+//        URLQueryItem(name: "filters", value: "post"),
 //        URLQueryItem(name: "count", value: "2"),
-//    URLQueryItem(name: "v", value: "5.111")]
+//        URLQueryItem(name: "v", value: "5.131")]
+//            
+//            let task = session.dataTask(with: urlConstructor.url!) { (data, response, error) in
 //
-//        let task = session.dataTask(with: url.url!) { (data, response, error)
-//        print(url.url!)
-//
-//        guard let data = data else { return }
+//            guard let data = data else { return }
 //
 //        do {
 //            let arrayNews = try JSONDecoder().decode(NewsResponse, from: data)
-//
-//            var NewsService: [PostNews] = []
-//
+//            var newsList: [PostNews] = []
 //            guard arrayNews.response.items.count != 0 else { return }
 //
-//            for i in 0...arrayNews.response.items.count-1 {
+//            for index in 0...arrayNews.response.items.count-1 {
 //                let date : String = String(arrayNews.response.items[i].date)
 //                let text: String = arrayNews.response.items[i].text
 //                var UrlPhoto: String = ""
 //
-//                if arrayNews.response.items[i].attachments.first?.type == "link" { UrlPhoto = arrayNews.response.items[i].attachments.first?.link?.photo.sizes.first?.url ?? ""
-//                                        print("link")
-//                                    }
-//                                    if arrayNews.response.items[i].attachments.first?.type == "photo" {
-//                                        UrlPhoto = arrayNews.response.items[i].attachments.first?.photo?.sizes.last?.url ?? ""
-//                                        print("photo")
-//                                    }
-//
-//                                    print("\(date) \(text) \(urlPhoto)")
-//
-//                    }  catch var error {
-//             print(error)
-//      }
+//            }
+//        }
+//            }
+//                    } catch var error {
+//                print(error)
+//            }
+//        
+//        task.resume()
 //    }
-//       task.resume()
-//     }
 //
 //
-//    }
+//
+//
 
 

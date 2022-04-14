@@ -413,24 +413,24 @@
         <scene sceneID="6PW-4T-7yc">
             <objects>
                 <navigationController id="Ew9-r6-lH3" customClass="NavigationController" customModule="vkontakte" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="News" id="bOO-sS-qfo"/>
+                    <tabBarItem key="tabBarItem" title="News" selectedImage="news" id="bOO-sS-qfo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="t0o-TF-Ib9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="njJ-1K-Wct" kind="show" identifier="showNews" id="y32-hv-ys4"/>
+                        <segue destination="njJ-1K-Wct" kind="show" identifier="newsShow" id="AwR-xy-6s3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5W-Ii-gyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3751" y="-252"/>
         </scene>
-        <!--Photo-->
+        <!--Photos-->
         <scene sceneID="9E2-3Q-yMK">
             <objects>
                 <navigationController id="8fV-qL-yC8" customClass="NavigationController" customModule="vkontakte" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Photo" id="pLy-9e-UOr"/>
+                    <tabBarItem key="tabBarItem" title="Photos" selectedImage="photos" id="pLy-9e-UOr"/>
                     <navigationItem key="navigationItem" id="YNl-we-O4c"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jBZ-A4-JEh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -454,35 +454,35 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Top" rowHeight="62" id="nuv-7C-YE5" customClass="topnews" customModule="vkontakte" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="62"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Top" rowHeight="54" id="nuv-7C-YE5" customClass="topnews" customModule="vkontakte" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nuv-7C-YE5" id="Z0r-Bw-dSD">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Text" rowHeight="63" id="CYJ-tM-wLA" customClass="textnews" customModule="vkontakte" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="106.5" width="414" height="63"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Text" rowHeight="51" id="CYJ-tM-wLA" customClass="textnews" customModule="vkontakte" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="98.5" width="414" height="51"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CYJ-tM-wLA" id="VME-qi-PQ2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Image" rowHeight="70" id="rpa-N5-Cm7">
-                                        <rect key="frame" x="0.0" y="169.5" width="414" height="70"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Image" rowHeight="53" id="rpa-N5-Cm7">
+                                        <rect key="frame" x="0.0" y="149.5" width="414" height="53"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rpa-N5-Cm7" id="aDG-Y6-poD" customClass="imagenews" customModule="vkontakte" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Bottom" rowHeight="83" id="3Ce-bq-6CO" customClass="bottomnews" customModule="vkontakte" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="239.5" width="414" height="83"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Bottom" rowHeight="54" id="3Ce-bq-6CO" customClass="bottomnews" customModule="vkontakte" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="202.5" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Ce-bq-6CO" id="8ag-Es-OG0">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -503,7 +503,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1P9-Ly-hfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3750.7246376811595" y="480.80357142857139"/>
+            <point key="canvasLocation" x="3751" y="481"/>
         </scene>
         <!--Groups-->
         <scene sceneID="Z7L-qB-WSW">
@@ -526,7 +526,9 @@
     <resources>
         <image name="friends" width="32" height="32"/>
         <image name="groups" width="32" height="32"/>
+        <image name="news" width="32" height="32"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="photos" width="32" height="32"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <image name="vk_logo" width="400" height="400"/>
         <systemColor name="linkColor">

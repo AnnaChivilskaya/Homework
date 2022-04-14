@@ -7,44 +7,43 @@
 
 //import UIKit
 //import Kingfisher
+//import SwiftUI
 //
 //class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+//    
+//    var postNews =  [GetNews]()
 //
+//      
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
-//
-//        GetNews().loadData { [weak self] (complition) in
-//            DispatchQueue.main.async {
-//                self?.postNews = complition
-//                self.tableView.reloadData()
-//            }
+//        
+//            GetNews().loadData()
+//           
 //        }
-//    }
 //
-//    var postNews: [PostNews] = []
 //
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return postNews.count
 //    }
 //
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//            return 60
+//        }
 //
-//        let identifier: String
+//        func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//            return 40
+//        }
 //
-//        let  cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! NewsTableViewCell
-//
-//
-//        //Имя/Название
-//        cell.NameNews.text = postNews[indexPath.row].name
-//
-//        //Дата
-//        cell.TimeNews.text = postNews[indexPath.row].date
-//        cell.TimeNews.font = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.light)
-//        cell.TimeNews.textColor = UIColor.gray.withAlphaComponent(0.5)
+//     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//         let cell = postNews[indexPath.section]
+//            }
+//         }
 //
 //
 //
-//    }
 //
-//}
+
+
+
 
