@@ -18,7 +18,6 @@ class NewGroupTableViewController: UITableViewController, UISearchResultsUpdatin
     var searchController:UISearchController!
     var GroupsView: [Groups] = []
     
-    // MARK: - Functions
     
     func setupSearchBar() {
         searchController = UISearchController(searchResultsController: nil)
@@ -52,8 +51,7 @@ class NewGroupTableViewController: UITableViewController, UISearchResultsUpdatin
         }
     }
     
-    
-    // MARK: - Table view data source
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return GroupsView.count
     }

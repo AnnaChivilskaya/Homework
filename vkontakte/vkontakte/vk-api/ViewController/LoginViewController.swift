@@ -76,9 +76,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
-    
-    
-    
+     
     @IBAction func loginPushButton(_ sender: Any) {
         
         guard loginTextField.text == "admin" && passwordTextField.text == "123456" else {
